@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Boarding Cost Per Pet</h1>
+
+<p>"Please enter your pets' information."</p>
+    
+<h2>Type of pets. Make an entry for each pet.</h2>
+<form><input type="text" id="pets"></form>
+<button onclick="enterPets()">Submit</button>
+
+<p>You have entered the following pets: <span id="enteredPets"></span></p>
+
+<button onclick="listCost(allThePets)">Get Cost</button>
+<p>The following is the boarding cost per day for each pet: <span id="costForEachPet"></span></p>
+
+<script>
+//variable
+var pet;
+//array
+var allThePets = [];
+//function    
+function enterPets() {
+  pet = document.getElementById("pets").value;
+  //variable and array
+  allThePets[allThePets.length]=pet;
+  document.getElementById("enteredPets").innerHTML = allThePets;
+}
+//function and paramenters    
+function boardingCost(pet) {
+   //variable and conditional statment
+   var cost;
+   switch(pet) {
+      case "dog":
+         cost = 30
+         break;
+      case "Dog":
+         cost = 30
+         break;
+      case "cat":
+         cost = 25
+         break;
+      case "Cat":
+         cost = 25
+         break;
+      case "bird":
+         cost = 20
+         break;
+      case "Bird":
+         cost = 20
+         break;
+      default:
+          cost = 20
+    }
+    return cost;
+}
+//function and parameters   
+function listCost(arr){
+    var allThePetsCost = "<ul>";
+    //loopm array, variable
+    for (i = 0; i < arr.length; i++) {
+        allThePetsCost += "<li>" + arr[i] + ": $" + boardingCost(arr[i]) + "</li>";
+    }
+    allThePetsCost += "<ul>";
+    document.getElementById("costForEachPet").innerHTML = allThePetsCost;
+}
+</script>
+
+</body>
+</html>
