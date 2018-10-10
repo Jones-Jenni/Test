@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body onload="getKidsForDisplay()">
+
+<h1>My Family Christmas list</h1>
+    <p id="kidsDisplay"></p>
+    
+<script>
+    var FaithToys = [];
+    var Faith = {name: "Faith", gender:"Girl", age:"14 months", christmasSunday: false, book: false, toys: FaithToys["shape sorter", "doll", "push toy"]}
+    
+    var FinnToys = [];
+    var Finn = {name: "Finn", gender:"Boy", age:"7", christmasSunday: false, book: false, toys: FinnToys["Pokemon cards", "super hero something"]}
+    
+    var allKids = [Faith, Finn];
+    
+    Function displayKids(kid){
+        var kName = kid.name;
+        var kGender = kid.gender;
+        var kAge = kid.age;
+        var kSunday = kid.ChristmasSunday;
+        var kBook = kid.book;
+        var kToys = kid.toys;
+        document.getElementById("kidsDisplay").innerHTML = kName;
+    }
+    Function getKidsForDisplay(){
+       
+        document.getElementById("kidsDisplay").innerHTML = "Faith";
+    }
+    document.getElementById("kidsDisplay").innerHTML = "Faith";
+    
+</script>
+    
+
+
+
+</body>
+</html>
