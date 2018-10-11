@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
 <body onload="getKidsForDisplay()">
-
+<script src="pets.js"></script>
 <h1>My Family Christmas list</h1>
-    <p id="kidsDisplay"></p>
     
+<p>Please enter the family member's information...</p>
+    
+<form>
+    
+ <div>
+    <label>Name</label>
+    <input id="name" type="text" padding-bottom: 50px/>
+</div>
+<div>
+    <label>Gender</label>
+    <select id="gender">
+       <option value="girl">Girl</option>
+       <option value="boy">Boy</option>
+    </select>
+</div>
+<div>
+    <label>Age</label>
+    <input id="age" type="text" />
+</div>
+<div>
+    <label>WishList</label>
+    <input id="gifts" type="text" />
+</div> 
+</form>
+    <button onclick="enterGifts()">Add Gift</button>
+    
+    <p id="test"></p>
+
 <script>
-    var FaithToys = [];
-    var Faith = {name: "Faith", gender:"Girl", age:"14 months", christmasSunday: false, book: false, toys: FaithToys["shape sorter", "doll", "push toy"]}
+var name = document.getElementByID("name").value;
+var gender = document.getElementByID("gender").value;
+var age = document.getElementByID("Age").value;
+var wishlist = document.getElementByID("wishlist").value;
+</script>    
+<button onclick="Person(name, gender, age, wishlist)">Add Entry</button>
     
-    var FinnToys = [];
-    var Finn = {name: "Finn", gender:"Boy", age:"7", christmasSunday: false, book: false, toys: FinnToys["Pokemon cards", "super hero something"]}
-    
-    var allKids = [Faith, Finn];
-    
-    Function displayKids(kid){
-        var kName = kid.name;
-        var kGender = kid.gender;
-        var kAge = kid.age;
-        var kSunday = kid.ChristmasSunday;
-        var kBook = kid.book;
-        var kToys = kid.toys;
-        document.getElementById("kidsDisplay").innerHTML = kName;
-    }
-    Function getKidsForDisplay(){
-       
-        document.getElementById("kidsDisplay").innerHTML = "Faith";
-    }
-    document.getElementById("kidsDisplay").innerHTML = "Faith";
-    
-</script>
+
     
 
 
