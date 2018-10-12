@@ -1,3 +1,4 @@
+
 var gift;
 var allTheGifts = [];
 function enterGifts() {
@@ -21,11 +22,12 @@ function addPerson(){
   var gender = document.getElementById("gender").value;
   var age = document.getElementById("age").value;
   var p = new Person(name, gender, age, allTheGifts);
-  document.getElementById("test2").innerHTML = p.name;
+    
+  var pJSON = JSON.stringify(p);
+  document.getElementById("test2").innerHTML = pJSON;  
+  var p2 = JSON.parse(pJSON);
+    document.getElementById("test3").innerHTML = p2.name;
 }
-
-allTheGifts[0]="toy";
-allTheGifts[1]="kite";
 
 //variable
 var pet;
