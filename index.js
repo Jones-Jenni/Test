@@ -1,4 +1,3 @@
-
 var gift;
 var allTheGifts = [];
 function enterGifts() {
@@ -17,13 +16,16 @@ function Person(name, gender, age, wishlist) {
 }
     
 var allThePeople = [];
-function addPerson(name, gender, age, wishlist){    
-    var p = new Person(name, gender, age, wishlist); // here we create instance
-    allThePeople.push(p);
-    
-  document.getElementById("test2").innerHTML = allThePeople[0].age;
+function addPerson(){    
+    var name = document.getElementById("name").value;
+  var gender = document.getElementById("gender").value;
+  var age = document.getElementById("age").value;
+  var p = new Person(name, gender, age, allTheGifts);
+  document.getElementById("test2").innerHTML = p.name;
 }
 
+allTheGifts[0]="toy";
+allTheGifts[1]="kite";
 
 //variable
 var pet;
