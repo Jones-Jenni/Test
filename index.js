@@ -1,4 +1,3 @@
-
 var gift;
 var allTheGifts = [];
 function enterGifts() {
@@ -14,7 +13,10 @@ function Person(name, gender, age, wishlist) {
     this.gender = gender;
     this.age = age;
     this.wishlist = wishlist;
+    this.combine = function(){return this.name + this.age};
 }
+
+
     
 var allThePeople = [];
 function addPerson(){    
@@ -25,9 +27,19 @@ function addPerson(){
     
   var pJSON = JSON.stringify(p);
   document.getElementById("test2").innerHTML = pJSON;  
+  localStorage.setItem("added-names", pJSON);
   var p2 = JSON.parse(pJSON);
-    document.getElementById("test3").innerHTML = p2.name;
+    document.getElementById("test3").innerHTML = localStorage.getItem("added-names");
 }
+
+function getList(){
+    var p2 = JSON.parse(localStorage.getItem("added-names"));
+ //   p2.combine = function() {
+//    return this.name + " " + this.age;
+//    };
+    document.getElementById("test4").innerHTML = p2.combine;
+}
+
 
 //variable
 var pet;
