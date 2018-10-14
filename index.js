@@ -11,8 +11,10 @@ function Person(name, gender, age, wishlist) {
     this.name = name;
     this.gender = gender;
     this.age = age;
-    this.wishlist = wishlist;
-    this.combine = function(){return this.name + this.age};
+    this.wishlist = wishlist; 
+    this.combine = function(){
+      return (this.name + ", " + this.age + ", " + this.wishlist);   
+    };
 }
 
 
@@ -34,7 +36,7 @@ function addPerson(){
    
    var listOfPeople = stringThroughList(allThePeople);
 
-   document.getElementById("peopleList").innerHTML = listOfPeople;
+   document.getElementById("peopleList").innerHTML = listOfPeople;  
 }
 
 function clearFields(){
@@ -49,7 +51,7 @@ function stringThroughList(list){
     var i, listOfPeople = "";
     var len = list.length;
     for(i = 0; i < len; i++) {
-        listOfPeople += "<li>" + list[i].name + ", " + list[i].gender + ", " + list[i].age + ", " + list[i].wishlist + "</li>"; 
+        listOfPeople += "<li>" + list[i].name + ":  " + list[i].wishlist + "</li>"; 
     }
     return listOfPeople;
     
