@@ -3,8 +3,7 @@ var allTheGifts = [];
 function enterGifts() {
   gift = document.getElementById("gifts").value;
   allTheGifts[allTheGifts.length]=gift;
-  document.getElementById("gifts").innerHTML = allTheGifts;
-  document.getElementById("test").innerHTML = allTheGifts;
+  document.getElementById("giftList").innerHTML = allTheGifts;
 }
 
 
@@ -19,25 +18,48 @@ function Person(name, gender, age, wishlist) {
 
     
 var allThePeople = [];
+var pJSON;
 function addPerson(){    
-    var name = document.getElementById("name").value;
-  var gender = document.getElementById("gender").value;
-  var age = document.getElementById("age").value;
-  var p = new Person(name, gender, age, allTheGifts);
+   var name = document.getElementById("name").value;
+   var gender = document.getElementById("gender").value;
+   var age = document.getElementById("age").value;
+   var p = new Person(name, gender, age, allTheGifts);
     
-  var pJSON = JSON.stringify(p);
-  document.getElementById("test2").innerHTML = pJSON;  
-  localStorage.setItem("added-names", pJSON);
-  var p2 = JSON.parse(pJSON);
-    document.getElementById("test3").innerHTML = localStorage.getItem("added-names");
+   allThePeople[allThePeople.length] = p;
+   aJSON = JSON.stringify(allThePeople);
+    
+   localStorage.setItem("array-of-names", aJSON);
+    
+   clearFields();
+   
+   var listOfPeople = stringThroughList(allThePeople);
+
+   document.getElementById("peopleList").innerHTML = listOfPeople;
 }
 
+function clearFields(){
+   allTheGifts = [];
+   document.getElementById("name").value = "";
+   document.getElementById("gender").value = "";
+   document.getElementById("age").value = "";
+   document.getElementById("gifts").value = "";
+}
+
+function stringThroughList(list){
+    var i, listOfPeople = "";
+    var len = list.length;
+    for(i = 0; i < len; i++) {
+        listOfPeople += "<li>" + list[i].name + ", " + list[i].gender + ", " + list[i].age + ", " + list[i].wishlist + "</li>"; 
+    }
+    return listOfPeople;
+    
+}
+
+
 function getList(){
-    var p2 = JSON.parse(localStorage.getItem("added-names"));
- //   p2.combine = function() {
-//    return this.name + " " + this.age;
-//    };
-    document.getElementById("test4").innerHTML = p2.combine;
+    var pArray = JSON.parse(localStorage.getItem("array-of-names"));
+    
+    document.getElementById("test6").innerHTML = stringThroughList(pArray);
 }
 
 
