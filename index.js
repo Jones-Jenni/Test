@@ -6,7 +6,7 @@ function enterGifts() {
   document.getElementById("giftList").innerHTML = allTheGifts;
 }
 
-
+//Object prototype/creation function/properities/method/instatiated objects will inherit these //properties and methods.
 function Person(name, gender, age, wishlist) {
     this.name = name;
     this.gender = gender;
@@ -25,20 +25,24 @@ function addPerson(){
    var name = document.getElementById("name").value;
    var gender = document.getElementById("gender").value;
    var age = document.getElementById("age").value;
-   var p = new Person(name, gender, age, allTheGifts);
+   //created new object p using Person object prototype/instantiation/inheritance
+    var p = new Person(name, gender, age, allTheGifts);
     
+   //added the new object to an array of objects that will be sent to another page via JSON
    allThePeople[allThePeople.length] = p;
+   //JSON stringify
    aJSON = JSON.stringify(allThePeople);
-    
+   //Stored array of objects turned into JSON in local storage so it could be retrieved later
    localStorage.setItem("array-of-names", aJSON);
     
    clearFields();
    
    var listOfPeople = stringThroughList(allThePeople);
-
+   //displayed list of people on screen so user can see
    document.getElementById("peopleList").innerHTML = listOfPeople;  
 }
 
+//Clear the fields to make it nice for user
 function clearFields(){
    allTheGifts = [];
    document.getElementById("name").value = "";
@@ -47,6 +51,7 @@ function clearFields(){
    document.getElementById("gifts").value = "";
 }
 
+//loop through array to get list info for display
 function stringThroughList(list){
     var i, listOfPeople = "";
     var len = list.length;
@@ -57,11 +62,12 @@ function stringThroughList(list){
     
 }
 
-
+//Local Storage, storing and retriving simple data, arrays, objects
 function getList(){
+    //JSON parse, parsed JSON string of an array of objects
     var pArray = JSON.parse(localStorage.getItem("array-of-names"));
     
-    document.getElementById("test6").innerHTML = stringThroughList(pArray);
+    document.getElementById("giftList").innerHTML = stringThroughList(pArray);
 }
 
 
