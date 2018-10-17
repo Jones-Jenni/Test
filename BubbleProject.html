@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<script src="index.js"></script>
+<head>
+<style>
+    #cir1 {
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        -webkit-animation-name: circle1;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: circle1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }    
+    
+    @-webkit-keyframes circle1 {
+        0% {background-color: paleturquoise; left:0px; top:0px;}
+        25% {background-color: aquamarine; left:400px; top:500px;}
+        50% {background-color: mediumaquamarine; left: 700px; top: 250px;}
+        75% {background-color: aquamarine; left: 200px; top: 100px;}}
+        100% {background-color: paleturquoise; left: 0px; top: 0px;}     
+    }
+    
+     @keyframes circle1 {
+        0% {background-color: paleturquoise; left:0px; top:0px;}
+        25% {background-color: aquamarine; left:400px; top:500px;}
+        50% {background-color: mediumaquamarine; left: 700px; top: 250px;}
+        75% {background-color: aquamarine; left: 200px; top: 100px;}}
+        100% {background-color: paleturquoise; left: 0px; top: 0px;}     
+    }
+    
+//    .cir2:hover {
+//    }
+    
+    div#cir2 {
+      width: 200px;
+      height: 200px;
+      background: darkred;
+      border-radius: 50%;
+      position: relative;
+      -webkit-transition: opacity 10s, -webkit-transform 10s; 
+      transition: opacity 10s, transform 10s;
+    }
+
+    div#cir2:hover {
+      opacity: 0.5;
+      -webkit-transform: translate(300px, 300px);
+      transform: translate(300px, 300px);
+    }
+    
+    #cir3 {
+        width: 150px;
+        height: 150px;
+        background-color: plum;
+        border-radius: 50%;
+        position: relative;
+    }    
+    
+    @-webkit-keyframes circle3 {
+        0% {background-color: plum; left:0px; top:0px;}
+        25% {background-color: mediumpurple; left:200px; top:100px;}
+        50% {background-color: rebeccapurple; left: 700px; top: -250px;}
+        75% {background-color: mediumpurple; left: 400px; top: 200px;}}
+        100% {background-color: plum; left: 0px; top: 0px;}     
+    }
+    
+     @keyframes circle3 {
+        0% {background-color: plum; left:0px; top:0px;}
+        25% {background-color: mediumpurple; left:200px; top:100px;}
+        50% {background-color: rebeccapurple; left: 700px; top: -250px;}
+        75% {background-color: mediumpurple; left: 400px; top: 200px;}}
+        100% {background-color: plum; left: 0px; top: 0px;}       
+    }
+    
+    //    .cir4:hover {
+//    }
+    
+    #cir4 {
+        width: 200px;
+        height: 200px;
+        background: orange;
+        border-radius: 50%;
+        position: relative;
+        -webkit-transition: opacity 10s, -webkit-transform 10s; 
+        transition: opacity 10s, transform 10s;
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+    }
+    
+    div#cir4:hover {
+      opacity: 0.5;
+      -webkit-transform: translate(300px, -700px);
+      transform: translate(300px, -700px);
+    }
+        
+</style>
+    
+
+    
+</head>
+    <body>
+        
+
+<h1>Bubbles Bubbles Everywhere</h1>
+        <button onclick="circleMove();">chngw</button>
+<div id="cir1";></div>
+<div id="cir2";></div>
+<div id="cir3";></div>
+<div id="cir4";></div>  
+
+<script>
+    cir3.addEventListener("click", function(){
+//       cir3.style.-webkit-animation = "circle3 10s infinite";
+       cir3.style.animation = "circle3 10s infinite";
+    });
+    
+</script>
+
+    </body>
+</html>
