@@ -79,27 +79,27 @@
     //    .cir4:hover {
 //    }
     
-    #cir4 {
+    .circle4 {
         width: 200px;
         height: 200px;
         background: orange;
         border-radius: 50%;
-        position: relative;
-        -webkit-transition: opacity 10s, -webkit-transform 10s; 
-        transition: opacity 10s, transform 10s;
-        -webkit-transition-timing-function: ease-in-out;
-        transition-timing-function: ease-in-out;
+        transition: opacity 2s;
+        -webkit-transition: opacity 2s;
     }
     
-    div#cir4:hover {
-      opacity: 0.5;
-      -webkit-transform: translate(300px, -700px);
-      transform: translate(300px, -700px);
-    }
         
 </style>
     
-
+<script>
+    
+    function circleMove(){
+        var elem = document.getElementById(cir4);
+    //    elem.style.transition = "background 10.0s ease-in 0s";
+     //   elem.style.background.color = 'green';
+        elem.style.opacity = 0;
+    }    
+</script>
     
 </head>
     <body>
@@ -110,14 +110,14 @@
 <div id="cir1";></div>
 <div id="cir2";></div>
 <div id="cir3";></div>
-<div id="cir4";></div>  
+<div id="cir4" class="circle4";></div>  
 
 <script>
     cir3.addEventListener("click", function(){
-//       cir3.style.-webkit-animation = "circle3 10s infinite";
        cir3.style.animation = "circle3 10s infinite";
     });
     
+ 
 </script>
 
     </body>
