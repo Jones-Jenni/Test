@@ -3,7 +3,8 @@
 <script src="index.js"></script>
 <head>
 <style>
-    #cir1 {
+ /*CSS3 Animation*/
+ #cir1 {
         width: 150px;
         height: 150px;
         background-color: aqua;
@@ -33,8 +34,9 @@
         100% {background-color: paleturquoise; left: 0px; top: 0px;}     
     }
     
-//    .cir2:hover {
-//    }
+     /*CSS3 Transition*/
+    .cir2:hover {
+    }
     
     div#cir2 {
       width: 200px;
@@ -45,13 +47,13 @@
       -webkit-transition: opacity 10s, -webkit-transform 10s; 
       transition: opacity 10s, transform 10s;
     }
-
     div#cir2:hover {
       opacity: 0.5;
       -webkit-transform: translate(300px, 300px);
       transform: translate(300px, 300px);
     }
     
+    /*CSS3 Animation triggered by Javascript*/
     #cir3 {
         width: 150px;
         height: 150px;
@@ -76,10 +78,10 @@
         100% {background-color: plum; left: 0px; top: 0px;}       
     }
     
-    //    .cir4:hover {
-//    }
-    
-    .circle4 {
+    .cir4:hover {
+    }
+     /*CSS3 Transition triggered with Javascript*/
+    #cir4 {
         width: 200px;
         height: 200px;
         background: orange;
@@ -92,33 +94,35 @@
 </style>
     
 <script>
+    //Javascript to trigger transition
+    function circleChange(){
+        var elem = document.getElementById("cir4");
+        if (elem.style.opacity < 1)
+          elem.style.opacity = 1;
+        else
+            elem.style.opacity = 0.5;
+    }
     
-    function circleMove(){
-        var elem = document.getElementById(cir4);
-    //    elem.style.transition = "background 10.0s ease-in 0s";
-     //   elem.style.background.color = 'green';
-        elem.style.opacity = 0;
-    }    
+    
 </script>
     
 </head>
-    <body>
+<body>
         
 
 <h1>Bubbles Bubbles Everywhere</h1>
-        <button onclick="circleMove();">chngw</button>
+<p>Click on the bubbles for an interesting effect.</p>
 <div id="cir1";></div>
 <div id="cir2";></div>
 <div id="cir3";></div>
-<div id="cir4" class="circle4";></div>  
+<div id="cir4"; onclick="circleChange()";></div>  
 
 <script>
-    cir3.addEventListener("click", function(){
+   //Javascript to trigger animation
+   cir3.addEventListener("click", function(){
        cir3.style.animation = "circle3 10s infinite";
-    });
-    
- 
+    });        
 </script>
-
-    </body>
+        
+</body>
 </html>
