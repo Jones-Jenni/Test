@@ -4,6 +4,15 @@ function enterGifts() {
   gift = document.getElementById("gifts").value;
   allTheGifts[allTheGifts.length]=gift;
   document.getElementById("giftList").innerHTML = allTheGifts;
+  enteredGifts();
+}
+
+function needToEnterGifts(){
+  document.getElementById("giftButton").className = "buttonColor1";  
+}
+
+function enteredGifts(){
+  document.getElementById("giftButton").className = "buttonColor2";   
 }
 
 //Object prototype/creation function/properities/method/instatiated objects will inherit these //properties and methods.
