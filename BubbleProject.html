@@ -3,8 +3,7 @@
 <script src="index.js"></script>
 <head>
 <style>
- /*CSS3 Animation*/
- #cir1 {
+    #cir1 {
         width: 150px;
         height: 150px;
         background-color: aqua;
@@ -34,9 +33,8 @@
         100% {background-color: paleturquoise; left: 0px; top: 0px;}     
     }
     
-     /*CSS3 Transition*/
-    .cir2:hover {
-    }
+//    .cir2:hover {
+//    }
     
     div#cir2 {
       width: 200px;
@@ -47,13 +45,13 @@
       -webkit-transition: opacity 10s, -webkit-transform 10s; 
       transition: opacity 10s, transform 10s;
     }
+
     div#cir2:hover {
       opacity: 0.5;
       -webkit-transform: translate(300px, 300px);
       transform: translate(300px, 300px);
     }
     
-    /*CSS3 Animation triggered by Javascript*/
     #cir3 {
         width: 150px;
         height: 150px;
@@ -78,51 +76,59 @@
         100% {background-color: plum; left: 0px; top: 0px;}       
     }
     
-    .cir4:hover {
-    }
-     /*CSS3 Transition triggered with Javascript*/
-    #cir4 {
-        width: 200px;
-        height: 200px;
-        background: orange;
-        border-radius: 50%;
-        transition: opacity 2s;
-        -webkit-transition: opacity 2s;
-    }
+//    .cir4:hover {
+//    }
     
-        
+    div#cir4 {
+      width: 200px;
+      height: 200px;
+      background: orange;
+      border-radius: 50%;
+      position: relative;
+      -webkit-transition: opacity 10s, -webkit-transform 10s; 
+      transition: opacity 10s, transform 10s;
+    }
+
+ //   div#cir4:hover {
+//      opacity: 0.5;
+//      -webkit-transform: translate(300px, -300px);
+//      transform: translate(300px, -300px);
+//    }    
 </style>
     
 <script>
-    //Javascript to trigger transition
-    function circleChange(){
-        var elem = document.getElementById("cir4");
-        if (elem.style.opacity < 1)
-          elem.style.opacity = 1;
-        else
-            elem.style.opacity = 0.5;
-    }
     
-    
+function circleMove(){
+  document.getElementById("cir4").style.width = "300px";
+  document.getElementById("cir4").style.opacity = "0";  
+  document.getElementById("cir4").style.translate(300px,-300px); 
+}       
 </script>
-    
 </head>
-<body>
+    <body>
         
 
 <h1>Bubbles Bubbles Everywhere</h1>
-<p>Click on the bubbles for an interesting effect.</p>
 <div id="cir1";></div>
 <div id="cir2";></div>
 <div id="cir3";></div>
-<div id="cir4"; onclick="circleChange()";></div>  
+<div id="cir4";></div>
+
+ 
 
 <script>
-   //Javascript to trigger animation
-   cir3.addEventListener("click", function(){
+    cir3.addEventListener("click", function(){
        cir3.style.animation = "circle3 10s infinite";
-    });        
+    });
+     cir4.addEventListener("click", function(){
+         cir4.style.translate(300px,-300px);
+         cir4.style.opacity = "0";
+         cir4.style.background: green;
+         cir3.style.animation = "circle4 10s infinite";
+    });
+    
+ 
 </script>
-        
-</body>
+
+    </body>
 </html>

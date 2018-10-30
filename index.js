@@ -15,6 +15,20 @@ function enteredGifts(){
   document.getElementById("giftButton").className = "buttonColor2";   
 }
 
+function addEntryValidation(){
+ //   if(document.getElementById("name").value != ""){
+//        document.getElementById("addEntryButton").className = "buttonColor1";
+//    }
+    //else if(document.getElementById("name").value == "j" || //document.getElementById("age").value == ""){
+    //    document.getElementById("giftButton").className = "buttonColor2";
+    var patt = /[abc]/
+  if (document.getElementById("name").value != ""){
+        document.getElementById("addEntryButton").className = "buttonColor1";
+    }
+//    }
+    
+}
+
 //Object prototype/creation function/properities/method/instatiated objects will inherit these //properties and methods.
 function Person(name, gender, age, wishlist) {
     this.name = name;
