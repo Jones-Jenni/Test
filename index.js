@@ -16,17 +16,16 @@ function enteredGifts(){
 }
 
 function addEntryValidation(){
- //   if(document.getElementById("name").value != ""){
-//        document.getElementById("addEntryButton").className = "buttonColor1";
-//    }
-    //else if(document.getElementById("name").value == "j" || //document.getElementById("age").value == ""){
-    //    document.getElementById("giftButton").className = "buttonColor2";
-    var patt = /[abc]/
-  if (document.getElementById("name").value != ""){
-        document.getElementById("addEntryButton").className = "buttonColor1";
-    }
-//    }
-    
+  var pattLetter = /[\w+]/;
+  var pattDigit = /[\d+]/;
+  var textName = document.getElementById("name").value;
+  var textAge = document.getElementById("age").value;
+  if (pattLetter.test(textName) && pattDigit.test(textAge)){
+    document.getElementById("addEntryButton").className = "buttonColor1";
+  }
+  else if (!pattLetter.test(textName) || !pattDigit.test(textAge)){
+    document.getElementById("addEntryButton").className = "buttonColor2";
+  }
 }
 
 //Object prototype/creation function/properities/method/instatiated objects will inherit these //properties and methods.
