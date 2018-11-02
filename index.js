@@ -4,15 +4,15 @@ function enterGifts() {
   gift = document.getElementById("gifts").value;
   allTheGifts[allTheGifts.length]=gift;
   document.getElementById("giftList").innerHTML = allTheGifts;
-  enteredGifts();
+  enteredSomething("giftButton");
 }
 
 function needToEnterGifts(){
   document.getElementById("giftButton").className = "buttonColor1";  
 }
 
-function enteredGifts(){
-  document.getElementById("giftButton").className = "buttonColor2";   
+function enteredSomething(buttonID){
+  document.getElementById(buttonID).className = "buttonColor2";   
 }
 
 function addEntryValidation(){
@@ -62,6 +62,8 @@ function addPerson(){
    var listOfPeople = stringThroughList(allThePeople);
    //displayed list of people on screen so user can see
    document.getElementById("peopleList").innerHTML = listOfPeople;  
+    
+   enteredSomething("addEntryButton");
 }
 
 //Clear the fields to make it nice for user
@@ -88,7 +90,7 @@ function stringThroughList(list){
 function getList(){
     //JSON parse, parsed JSON string of an array of objects
     var pArray = JSON.parse(localStorage.getItem("array-of-names"));
-    
+    document.getElementById("giftList").style.fontSize = "20px";
     document.getElementById("giftList").innerHTML = stringThroughList(pArray);
 }
 
