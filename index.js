@@ -4,27 +4,35 @@ function enterGifts() {
   gift = document.getElementById("gifts").value;
   allTheGifts[allTheGifts.length]=gift;
   document.getElementById("giftList").innerHTML = allTheGifts;
-  enteredSomething("giftButton");
+  enteredGifts();
+  addEntryValidation();
 }
 
+//Manipulating CSS Class Properties Using Javascript
 function needToEnterGifts(){
+  document.getElementById("giftButton").disabled = false;
   document.getElementById("giftButton").className = "buttonColor1";  
 }
 
-function enteredSomething(buttonID){
-  document.getElementById(buttonID).className = "buttonColor2";   
+//Manipulating CSS Class Properties Using Javascript
+function enteredGifts(){
+  document.getElementById("giftButton").disabled = true;
+  document.getElementById("giftButton").className = "buttonColor2";   
 }
 
+//Manipulating CSS Class Properties Using Javascript
 function addEntryValidation(){
   var pattLetter = /[\w+]/;
   var pattDigit = /[\d+]/;
   var textName = document.getElementById("name").value;
   var textAge = document.getElementById("age").value;
-  if (pattLetter.test(textName) && pattDigit.test(textAge)){
+  if (pattLetter.test(textName) && pattDigit.test(textAge) && (allTheGifts[0] != "" && allTheGifts[0] != null)){
     document.getElementById("addEntryButton").className = "buttonColor1";
+    document.getElementById("addEntryButton").disabled = false;
   }
-  else if (!pattLetter.test(textName) || !pattDigit.test(textAge)){
+  else if (!pattLetter.test(textName) || !pattDigit.test(textAge) || (allTheGifts[0] == "" || allTheGifts[0] == null)){
     document.getElementById("addEntryButton").className = "buttonColor2";
+    document.getElementById("addEntryButton").disabled = true;
   }
 }
 
@@ -62,8 +70,6 @@ function addPerson(){
    var listOfPeople = stringThroughList(allThePeople);
    //displayed list of people on screen so user can see
    document.getElementById("peopleList").innerHTML = listOfPeople;  
-    
-   enteredSomething("addEntryButton");
 }
 
 //Clear the fields to make it nice for user
@@ -90,10 +96,59 @@ function stringThroughList(list){
 function getList(){
     //JSON parse, parsed JSON string of an array of objects
     var pArray = JSON.parse(localStorage.getItem("array-of-names"));
-    document.getElementById("giftList").style.fontSize = "20px";
+    
     document.getElementById("giftList").innerHTML = stringThroughList(pArray);
+    
+    //insertBefore
+    var giftList = document.getElementById("giftList");
+    var newEntry = document.createElement("LI");
+    var textForNewEntry = document.createTextNode("Don't Forget Yourself!");
+    newEntry.appendChild(textForNewEntry);
+    giftList.insertBefore(newEntry, giftList.childNodes[0]);
+    
+    
 }
 
+//AJAX requesting a JSON file
+function getNaughty(){
+    var getTxt = new XMLHttpRequest();
+
+    getTxt.onreadystatechange = function(){
+        if (this.readyState == 4){
+            var txt = JSON.parse(this.responseText);
+
+            createPara(txt[0], "naughtyDiv", "p"); 
+            
+       }
+    };
+    getTxt.open("GET", "naughty.txt", true);
+    getTxt.send();
+    
+    removeButton();
+    
+}
+
+//appendChild and createElement
+function createPara(contents, elem, typeElem){
+    var divBeingAddedTo;
+    var para = document.createElement(typeElem);
+    var txt = document.createTextNode(contents);
+    para.appendChild(txt);
+    divBeingAddedTo = document.getElementById(elem);
+    divBeingAddedTo.appendChild(para);
+}
+
+//removeChild
+function removeButton(){
+    var btn = document.getElementById("printButton");
+    var divBeingTakenAwayFrom = document.getElementById("naughtyDiv");
+    divBeingTakenAwayFrom.removeChild(btn);
+}
+
+function buttonManagement(){
+    document.getElementById("giftButton").disabled = true;
+    document.getElementById("addEntryButton").disabled = true;
+}
 
 //variable
 var pet;
