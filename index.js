@@ -70,6 +70,8 @@ function addPerson(){
    var listOfPeople = stringThroughList(allThePeople);
    //displayed list of people on screen so user can see
    document.getElementById("peopleList").innerHTML = listOfPeople;  
+    
+   buttonManagement();
 }
 
 //Clear the fields to make it nice for user
@@ -147,6 +149,8 @@ function removeButton(){
 
 function buttonManagement(){
     document.getElementById("giftButton").disabled = true;
+    document.getElementById("giftButton").className = "buttonColor2";
+    document.getElementById("addEntryButton").className = "buttonColor2";
     document.getElementById("addEntryButton").disabled = true;
 }
 
