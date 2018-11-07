@@ -1,0 +1,85 @@
+<DOCTYPE html>
+<html>
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+     #cir1 {
+        width: 125px;
+        height: 125px;
+        background-color: darkgoldenrod;
+        border-radius: 50%;
+        position: relative;
+        -webkit-animation-name: circle1;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: circle1;
+        animation-duration: 5s;
+        animation-timing-function:ease-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+    }    
+    
+    @-webkit-keyframes circle1 {
+        0% {left: 0px; top:200px;}
+        8% {left: 200px; top:600px;}
+        16% {left: 375px; top: 350px;}
+        24% {left: 525px; top:600px;}
+        32% {left: 650px; top: 450px;}    
+        40% {left: 750px; top:600px;}
+        48% {left: 810px; top: 525px;}    
+        56% {left: 860px; top: 600px;}
+        64% {left: 900x; top: 560px;}    
+        72% {left: 930px; top: 600px;}
+        80% {left: 950px; top: 580px;}
+        87% {left: 975px; top: 600px;}
+        94% {left: 990px; top: 590px;}
+        100% {left: 1000px; top: 600px;}    
+    }
+    
+     @keyframes circle1 {
+        0% {left: 0px; top:200px;}
+        8% {left: 200px; top:600px;}
+        16% {left: 375px; top: 350px;}
+        24% {left: 525px; top:600px;}
+        32% {left: 650px; top: 450px;}    
+        40% {left: 750px; top:600px;}
+        48% {left: 810px; top: 525px;}    
+        56% {left: 860px; top: 600px;}
+        64% {left: 900x; top: 560px;}    
+        72% {left: 930px; top: 600px;}
+        80% {left: 950px; top: 580px;}
+        87% {left: 970px; top: 600px;}
+        94% {left: 990px; top: 590px;}
+        100% {left: 1000px; top: 600px;}    
+    }
+        
+        
+      /*CSS3 Transition*/
+    .cir2:hover {
+    }
+    
+    div#cir2 {
+      width: 100px;
+      height: 100px;
+      background: darkred;
+      position: relative;
+      -webkit-transform 10s; 
+      transform 10s;
+    }
+    div#cir2:hover {
+      opacity: 0.5;
+      -webkit-transform: translate(20px, 1000px);
+      transform: translate(20px, 1000px);
+    }
+    </style>
+</head>
+<body>
+    
+    
+    
+    
+    <div id="cir1";></div>
+    
+<body>
+<html>
