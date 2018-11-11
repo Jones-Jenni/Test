@@ -3,6 +3,7 @@
 <head>
     <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
+        
     <style>
      #cir1 {
         width: 125px;
@@ -54,32 +55,42 @@
         100% {left: 1000px; top: 600px;}    
     }
         
-        
-      /*CSS3 Transition*/
-    .cir2:hover {
-    }
-    
-    div#cir2 {
-      width: 100px;
-      height: 100px;
-      background: darkred;
-      position: relative;
-      -webkit-transform 10s; 
-      transform 10s;
-    }
-    div#cir2:hover {
-      opacity: 0.5;
-      -webkit-transform: translate(20px, 1000px);
-      transform: translate(20px, 1000px);
-    }
+        canvas {
+            height: 1000px;
+            width: 1000px;
+        }
     </style>
-</head>
-<body>
     
+    <script>
+    //var confettiArray[];
+    var x;
+    function createCanvas(){
+        var c = document.createElement("CANVAS");
+        var ctxC = c.getContext("2d");
+        function animateConfetti(){
+        requestAnimationFrame(animateConfetti);
+        ctxC.fillStyle = "red";
+//        x = 10;
+        x = Math.random() * 999;
+        ctxC.fillRect(x,0,1,1);
+        document.body.appendChild(c);
+    }
+    }
+        
+    function delayConfetti(){
+        setTimeout(function(){createCanvas();}, 5000);
+    }
+        
+    
+   
+    </script>
+</head>
+<body onload="delayConfetti()">
     
     
     
     <div id="cir1";></div>
+    
     
 <body>
 <html>
