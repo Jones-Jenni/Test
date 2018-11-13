@@ -28,5 +28,89 @@ select {
 }
 
 .buttonColor2{
-    background-color: antiquewhite;
+    background-color: white;
+}
+
+#toy1{
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    -webkit-transition: opacity 10s, -webkit-transform 2s; 
+      transition: opacity 10s, transform 2s;
+    }
+
+    div#toy1:hover {
+      opacity: 0.5;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+
+#toy2{
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 600px;
+    -webkit-transition: opacity 10s, -webkit-transform 2s; 
+      transition: opacity 10s, transform 2s;
+    }
+
+    div#toy2:hover {
+      opacity: 0.5;
+      -webkit-transform: scaleY(1.5);
+      transform: scaleY(1.5);
+    }
+
+
+#toy3{
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    border-radius: 50%;
+    position: absolute;
+    left: 1000px;
+    top: 500px;
+}
+
+#toy4{
+    width: 30px;
+    height: 30px;
+    background: darkred;   
+    position: absolute;
+    left: 800px;
+    top: 100px;
+}
+
+#toy5{
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    border-radius: 100%;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+
+#toy6{
+    width: 30px;
+    height: 30px;
+    background: darkred;
+    border-radius: 50%;
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+}
+
+#toy7{
+    width: 30px;
+    height: 30px;
+    background: darkred; 
+    position: absolute;
+    left: 600px;
+    top: 550px;
 }

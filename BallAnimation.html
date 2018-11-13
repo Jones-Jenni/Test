@@ -60,34 +60,64 @@
             width: 1000px;
         }
     </style>
+ 
+ 
     
     <script>
-    //var confettiArray[];
-    var x;
-    function createCanvas(){
+ 
+      function createCanvas(){
+        
         var c = document.createElement("CANVAS");
         var ctxC = c.getContext("2d");
-        function animateConfetti(){
-        requestAnimationFrame(animateConfetti);
-        ctxC.fillStyle = "red";
-//        x = 10;
-        x = Math.random() * 999;
-        ctxC.fillRect(x,0,1,1);
+        for (i = 0; i < 100; i++) {
+          ctxC.fillStyle = "red";
+          var x = Math.random() * 300;
+          var y = Math.random() * 300;
+          ctxC.fillRect(x,y,2,2);
+          document.body.appendChild(c);
+        }
+        for (i = 0; i < 100; i++) {
+          ctxC.fillStyle = "blue";
+          var x = Math.random() * 300;
+          var y = Math.random() * 300;
+          ctxC.fillRect(x,y,2,2);
+          document.body.appendChild(c);
+        }
+        for (i = 0; i < 100; i++) {
+          ctxC.fillStyle = "orange";
+          var x = Math.random() * 300;
+          var y = Math.random() * 300;
+          ctxC.fillRect(x,y,2,2);
+          document.body.appendChild(c);
+        }
+        for (i = 0; i < 100; i++) {
+          ctxC.fillStyle = "green";
+          var x = Math.random() * 300;
+          var y = Math.random() * 300;
+          ctxC.fillRect(x,y,2,2);
+          document.body.appendChild(c);
+        }
+          
+ 
+        ctxC.font = "40px Helvetica";
+        ctxC.fillText("Happy", 100, 25);
         document.body.appendChild(c);
-    }
+        ctxC.font = "40px Helvetica";
+        ctxC.fillText("Birthday", 80, 65);
+        document.body.appendChild(c);
     }
         
     function delayConfetti(){
         setTimeout(function(){createCanvas();}, 5000);
     }
         
-    
-   
     </script>
 </head>
 <body onload="delayConfetti()">
     
-    
+    <audio autoplay loop>
+      <source src="Happy-Birthday-Song-In-English.mp3" type="audio/mpeg">
+    </audio>
     
     <div id="cir1";></div>
     
