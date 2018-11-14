@@ -1,3 +1,23 @@
+function toyChange(toy){
+        if (document.getElementById(toy).style.width < "50px") {
+           document.getElementById(toy).style.width = "50px";
+           document.getElementById(toy).style.height = "50px";
+        }
+        else {
+            document.getElementById(toy).style.width = "30px";
+            document.getElementById(toy).style.height = "30px";
+        }
+}
+
+function toyRotate(toy){
+    if (document.getElementById(toy).style.transform > "rotate(0deg)") {
+        document.getElementById(toy).style.transform = "rotate(0deg)";
+    }
+    else {
+        document.getElementById(toy).style.transform = "rotate(360deg)"
+    }
+}
+
 var gift;
 var allTheGifts = [];
 function enterGifts() {

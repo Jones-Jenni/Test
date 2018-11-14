@@ -38,12 +38,11 @@ select {
     position: absolute;
     left: 100px;
     top: 500px;
-    -webkit-transition: opacity 10s, -webkit-transform 2s; 
-      transition: opacity 10s, transform 2s;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
     }
 
     div#toy1:hover {
-      opacity: 0.5;
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
@@ -56,16 +55,13 @@ select {
     position: absolute;
     left: 200px;
     top: 600px;
-    -webkit-transition: opacity 10s, -webkit-transform 2s; 
-      transition: opacity 10s, transform 2s;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
     }
 
-    div#toy2:hover {
-      opacity: 0.5;
-      -webkit-transform: scaleY(1.5);
-      transform: scaleY(1.5);
-    }
-
+   
 
 #toy3{
     width: 30px;
@@ -75,6 +71,15 @@ select {
     position: absolute;
     left: 1000px;
     top: 500px;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+div#toy3:hover {
+   width: 50px;
+   height: 50px;
 }
 
 #toy4{
@@ -84,16 +89,19 @@ select {
     position: absolute;
     left: 800px;
     top: 100px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
 }
 
 #toy5{
     width: 30px;
     height: 30px;
     background: darkred;
-    border-radius: 100%;
     position: absolute;
     left: 500px;
     top: 300px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
 }
 
 #toy6{
@@ -104,6 +112,15 @@ select {
     position: absolute;
     left: 1200px;
     top: 200px;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+div#toy6:hover {
+   width: 50px;
+   height: 50px;
 }
 
 #toy7{
@@ -113,4 +130,6 @@ select {
     position: absolute;
     left: 600px;
     top: 550px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
 }
