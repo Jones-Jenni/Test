@@ -79,6 +79,8 @@
  
       function createCanvas(){
         
+        document.getElementById("cir1").hidden = true
+          
         var c = document.createElement("CANVAS");
         var ctxC = c.getContext("2d");
         for (i = 0; i < 100; i++) {
@@ -112,10 +114,10 @@
           
  
         ctxC.font = "40px Helvetica";
-        ctxC.fillText("Happy", 100, 25);
+        ctxC.fillText("Happy", 100, 50);
         document.body.appendChild(c);
         ctxC.font = "40px Helvetica";
-        ctxC.fillText("Birthday", 80, 65);
+        ctxC.fillText("Birthday", 80, 95);
         document.body.appendChild(c);
          
        // var audio = new Audio('Happy-Birthday-Song-Download.mp3');
