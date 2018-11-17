@@ -31,10 +31,15 @@ select {
     background-color: white;
 }
 
+.listLink {
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    font-weight: bold;   
+}
+
 #toy1{
     width: 30px;
     height: 30px;
-    background: darkred;
     position: absolute;
     left: 100px;
     top: 500px;
@@ -50,7 +55,7 @@ select {
 #toy2{
     width: 30px;
     height: 30px;
-    background: darkred;
+    background-image: radial-gradient(red, darkred);
     border-radius: 50%;
     position: absolute;
     left: 200px;
@@ -66,7 +71,7 @@ select {
 #toy3{
     width: 30px;
     height: 30px;
-    background: darkred;
+    background-image: radial-gradient(green, darkgreen);
     border-radius: 50%;
     position: absolute;
     left: 1000px;
@@ -85,7 +90,6 @@ div#toy3:hover {
 #toy4{
     width: 30px;
     height: 30px;
-    background: darkred;   
     position: absolute;
     left: 800px;
     top: 100px;
@@ -96,7 +100,6 @@ div#toy3:hover {
 #toy5{
     width: 30px;
     height: 30px;
-    background: darkred;
     position: absolute;
     left: 500px;
     top: 300px;
@@ -107,7 +110,7 @@ div#toy3:hover {
 #toy6{
     width: 30px;
     height: 30px;
-    background: darkred;
+    background-image: radial-gradient(red, darkred);
     border-radius: 50%;
     position: absolute;
     left: 1200px;
@@ -125,11 +128,107 @@ div#toy6:hover {
 
 #toy7{
     width: 30px;
-    height: 30px;
-    background: darkred; 
+    height: 30px; 
     position: absolute;
     left: 600px;
     top: 550px;
     -webkit-transition: -webkit-transform 2s; 
     transition: transform 2s;
+}
+
+#toy8{
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    left: 1200px;
+    top: 500px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
+}
+
+#toy9{
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    left: 300px;
+    top: 550px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
+}
+
+#toy10{
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
+}
+
+#toy11{
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    left: 900px;
+    top: 600px;
+    -webkit-transition: -webkit-transform 2s; 
+    transition: transform 2s;
+}
+
+#toy12{
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(green, darkgreen);
+    border-radius: 50%;
+    position: absolute;
+    left: 900px;
+    top: 250px;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+div#toy12:hover {
+   width: 50px;
+   height: 50px;
+}
+
+#toy13{
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(green, darkgreen);
+    border-radius: 50%;
+    position: absolute;
+    left: 400px;
+    top: 450px;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+div#toy13:hover {
+   width: 50px;
+   height: 50px;
+}
+
+#toy14{
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(red, darkred);
+    border-radius: 50%;
+    position: absolute;
+    left: 740px;
+    top: 440px;
+    -webkit-transition-property: width height; 
+    -webkit-transition-duration: 2s; 
+    transition-property: width height;
+    transition-duration: 2s;
+}
+
+div#toy14:hover {
+   width: 50px;
+   height: 50px;
 }

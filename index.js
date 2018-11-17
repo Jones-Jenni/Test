@@ -91,6 +91,8 @@ function addPerson(){
    //displayed list of people on screen so user can see
    document.getElementById("peopleList").innerHTML = listOfPeople;  
     
+   document.getElementById("ChristmasListLink").className = "listLink";
+    
    buttonManagement();
 }
 

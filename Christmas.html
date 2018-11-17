@@ -40,10 +40,43 @@
     
 <p id="peopleList"></p>
     
-<a href="ChristmasList.html"><p>Get ChristmasList</p></a><br><br><br>
+<a href="ChristmasList.html"><p id="ChristmasListLink">Get ChristmasList</p></a><br><br><br>
     
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wGDqPVASLIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<script>   
+    document.getElementById("gifts").addEventListener("keyup", function(event){
+       event.preventDefault();
+       if(event.keyCode === 13) {
+          addEntryValidation();
+          document.getElementById("giftButton").click();
+       }
+    });
+    
+    document.getElementById("name").addEventListener("keyup", function(event){
+       event.preventDefault();
+       if(event.keyCode === 13) {
+          addEntryValidation();
+          document.getElementById("addEntryButton").click();
+       }
+    });
+    
+    document.getElementById("gender").addEventListener("keyup", function(event){
+       event.preventDefault();
+       if(event.keyCode === 13) {
+          addEntryValidation();
+          document.getElementById("addEntryButton").click();
+       }
+    });
+    
+    document.getElementById("age").addEventListener("keyup", function(event){
+       event.preventDefault();
+       if(event.keyCode === 13) {
+          addEntryValidation();
+          document.getElementById("addEntryButton").click();
+       }
+    });
+</script>
 
 </body>
 </html>
