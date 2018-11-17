@@ -1,14 +1,16 @@
+//Make ball bigger and smaller on event and mimic hover
 function toyChange(toy){
-        if (document.getElementById(toy).style.width < "50px") {
-           document.getElementById(toy).style.width = "50px";
-           document.getElementById(toy).style.height = "50px";
-        }
-        else {
-            document.getElementById(toy).style.width = "30px";
-            document.getElementById(toy).style.height = "30px";
-        }
+    if (document.getElementById(toy).style.width < "50px") {
+        document.getElementById(toy).style.width = "50px";
+       document.getElementById(toy).style.height = "50px";
+    }
+    else {
+        document.getElementById(toy).style.width = "30px";
+        document.getElementById(toy).style.height = "30px";
+    }
 }
 
+//Used to spin snowflakes and mimic hover
 function toyRotate(toy){
     if (document.getElementById(toy).style.transform > "rotate(0deg)") {
         document.getElementById(toy).style.transform = "rotate(0deg)";

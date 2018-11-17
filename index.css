@@ -31,6 +31,7 @@ select {
     background-color: white;
 }
 
+/*Used to make link to Christmas list more obvious after entry has been made.*/
 .listLink {
     font-family: Comic Sans MS;
     font-size: 30px;

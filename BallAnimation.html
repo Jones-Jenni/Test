@@ -75,12 +75,12 @@
     
     </body>
     
-        <script>
+    <script>
  
       function createCanvas(){
-        
+        //hide ball
         document.getElementById("cir1").hidden = true
-          
+        //Create canvas and fill with confetti  
         var c = document.createElement("CANVAS");
         var ctxC = c.getContext("2d");
         for (i = 0; i < 100; i++) {
@@ -112,7 +112,7 @@
           document.body.appendChild(c);
         }
           
- 
+        //Add happy birthday to canvas
         ctxC.font = "40px Helvetica";
         ctxC.fillText("Happy", 100, 50);
         document.body.appendChild(c);
@@ -121,7 +121,7 @@
         document.body.appendChild(c);
          
     }
-        
+    //Wait for ball to stop bouncing to bring on the confetti    
     function delayConfetti(){
         setTimeout(function(){createCanvas();}, 5000);
     }

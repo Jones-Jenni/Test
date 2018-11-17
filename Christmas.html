@@ -45,6 +45,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wGDqPVASLIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>   
+    //User can hit enter in addition to the button. Still checks for proper entery (addEntryValidation).
     document.getElementById("gifts").addEventListener("keyup", function(event){
        event.preventDefault();
        if(event.keyCode === 13) {
