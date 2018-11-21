@@ -1,0 +1,1448 @@
+<DOCTYPE html>
+<html>
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+<style>
+
+    #confetti {
+        
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 100px;
+        -webkit-animation-name: confetti;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }    
+    
+    @-webkit-keyframes confetti {
+        0% {left: 100px; top:0px;}
+        75% {left: 100px; top:600px;}
+        80% {left: 120px; top:550px;}
+        82% {left: 122px; top:555px;}
+        84% {left: 124px; top:560px;}
+        86% {left: 126px; top:565px;}
+        88% {left: 128px; top:570px;}
+        90% {left: 130px; top:575px;}
+        92% {left: 132px; top:580px;}
+        94% {left: 134px; top:585px;}
+        96% {left: 136px; top:590px;}
+        98% {left: 138px; top:595px;}
+        100% {left: 140px; top: 600px;}     
+    }
+    
+     @keyframes confetti {
+        0% {left: 100px; top:0px;}
+        75% {left: 100px; top:600px;}
+        80% {left: 120px; top:550px;}
+        82% {left: 122px; top:555px;}
+        84% {left: 124px; top:560px;}
+        86% {left: 126px; top:565px;}
+        88% {left: 128px; top:570px;}
+        90% {left: 130px; top:575px;}
+        92% {left: 132px; top:580px;}
+        94% {left: 134px; top:585px;}
+        96% {left: 136px; top:590px;}
+        98% {left: 138px; top:595px;}
+        100% {left: 140px; top: 600px;}      
+    }
+    
+     #confetti1 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 440px;
+        -webkit-animation-name: confetti1;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti1;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.15s;
+    }    
+    
+    @-webkit-keyframes confetti1 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}     
+    }
+    
+     @keyframes confetti1 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}    
+    }
+    
+    #confetti2 {
+    
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        left: 240px;
+        float: left;
+        -webkit-animation-name: confetti2;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti2;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.5s;
+    }    
+    
+    @-webkit-keyframes confetti2 {
+        0% {left: 240px; top:0px;}
+        75% {left: 240px; top:600px;}
+        80% {left: 238px; top:550px;}
+        82% {left: 236px; top:555px;}
+        84% {left: 234px; top:560px;}
+        86% {left: 232px; top:565px;}
+        88% {left: 230px; top:570px;}
+        90% {left: 228px; top:575px;}
+        92% {left: 226px; top:580px;}
+        94% {left: 224px; top:585px;}
+        96% {left: 222px; top:590px;}
+        98% {left: 220px; top:595px;}
+        100% {left: 218px; top: 600px;}     
+    }
+    
+     @keyframes confetti2 {
+        0% {left: 240px; top:0px;}
+        75% {left: 240px; top:600px;}
+        80% {left: 238px; top:550px;}
+        82% {left: 236px; top:555px;}
+        84% {left: 234px; top:560px;}
+        86% {left: 232px; top:565px;}
+        88% {left: 230px; top:570px;}
+        90% {left: 228px; top:575px;}
+        92% {left: 226px; top:580px;}
+        94% {left: 224px; top:585px;}
+        96% {left: 222px; top:590px;}
+        98% {left: 220px; top:595px;}
+        100% {left: 218px; top: 600px;}    
+    }
+    
+    #confetti3 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 500px;
+        -webkit-animation-name: confetti3;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti3;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.25s;
+    }    
+    
+    @-webkit-keyframes confetti3 {
+        0% {left: 500px; top:0px;}
+        75% {left: 500px; top:600px;}
+        80% {left: 520px; top:550px;}
+        82% {left: 522px; top:555px;}
+        84% {left: 524px; top:560px;}
+        86% {left: 526px; top:565px;}
+        88% {left: 528px; top:570px;}
+        90% {left: 530px; top:575px;}
+        92% {left: 532px; top:580px;}
+        94% {left: 534px; top:585px;}
+        96% {left: 536px; top:590px;}
+        98% {left: 538px; top:595px;}
+        100% {left: 540px; top: 600px;}     
+    }
+    
+     @keyframes confetti3 {
+        0% {left: 500px; top:0px;}
+        75% {left: 500px; top:600px;}
+        80% {left: 520px; top:550px;}
+        82% {left: 522px; top:555px;}
+        84% {left: 524px; top:560px;}
+        86% {left: 526px; top:565px;}
+        88% {left: 528px; top:570px;}
+        90% {left: 530px; top:575px;}
+        92% {left: 532px; top:580px;}
+        94% {left: 534px; top:585px;}
+        96% {left: 536px; top:590px;}
+        98% {left: 538px; top:595px;}
+        100% {left: 540px; top: 600px;}      
+    }
+    
+     #confetti4 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 230px;
+        -webkit-animation-name: confetti4;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti4;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.05s;
+    }    
+    
+    @-webkit-keyframes confetti4 {
+        0% {left: 230px; top:0px;}
+        75% {left: 230px; top:600px;}
+        80% {left: 250px; top:550px;}
+        82% {left: 252px; top:555px;}
+        84% {left: 254px; top:560px;}
+        86% {left: 256px; top:565px;}
+        88% {left: 258px; top:570px;}
+        90% {left: 260px; top:575px;}
+        92% {left: 262px; top:580px;}
+        94% {left: 264px; top:585px;}
+        96% {left: 266px; top:590px;}
+        98% {left: 268px; top:595px;}
+        100% {left: 270px; top: 600px;}      
+    }
+    
+     @keyframes confetti4 {
+        0% {left: 230px; top:0px;}
+        75% {left: 230px; top:600px;}
+        80% {left: 250px; top:550px;}
+        82% {left: 252px; top:555px;}
+        84% {left: 254px; top:560px;}
+        86% {left: 256px; top:565px;}
+        88% {left: 258px; top:570px;}
+        90% {left: 260px; top:575px;}
+        92% {left: 262px; top:580px;}
+        94% {left: 264px; top:585px;}
+        96% {left: 266px; top:590px;}
+        98% {left: 268px; top:595px;}
+        100% {left: 270px; top: 600px;}      
+    }
+    
+    #confetti5 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 600px;
+        -webkit-animation-name: confetti5;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti5;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }    
+    
+    @-webkit-keyframes confetti5 {
+        0% {left: 600px; top:0px;}
+        75% {left: 600px; top:600px;}
+        80% {left: 620px; top:550px;}
+        82% {left: 622px; top:555px;}
+        84% {left: 624px; top:560px;}
+        86% {left: 626px; top:565px;}
+        88% {left: 628px; top:570px;}
+        90% {left: 630px; top:575px;}
+        92% {left: 632px; top:580px;}
+        94% {left: 634px; top:585px;}
+        96% {left: 636px; top:590px;}
+        98% {left: 638px; top:595px;}
+        100% {left: 640px; top: 600px;}     
+    }
+    
+     @keyframes confetti5 {
+        0% {left: 600px; top:0px;}
+        75% {left: 600px; top:600px;}
+        80% {left: 620px; top:550px;}
+        82% {left: 622px; top:555px;}
+        84% {left: 624px; top:560px;}
+        86% {left: 626px; top:565px;}
+        88% {left: 628px; top:570px;}
+        90% {left: 630px; top:575px;}
+        92% {left: 632px; top:580px;}
+        94% {left: 634px; top:585px;}
+        96% {left: 636px; top:590px;}
+        98% {left: 638px; top:595px;}
+        100% {left: 640px; top: 600px;}      
+    }
+    
+     #confetti6 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 340px;
+        -webkit-animation-name: confetti6;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti6;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.18s;
+    }    
+    
+    @-webkit-keyframes confetti6 {
+        0% {left: 340px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}     
+    }
+    
+     @keyframes confetti6 {
+        0% {left: 340px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}    
+    }
+    
+    #confetti7 {
+    
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        left: 270px;
+        float: left;
+        -webkit-animation-name: confetti7;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti7;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.4s;
+    }    
+    
+    @-webkit-keyframes confetti7 {
+        0% {left: 270px; top:0px;}
+        75% {left: 270px; top:600px;}
+        80% {left: 268px; top:550px;}
+        82% {left: 266px; top:555px;}
+        84% {left: 264px; top:560px;}
+        86% {left: 262px; top:565px;}
+        88% {left: 260px; top:570px;}
+        90% {left: 258px; top:575px;}
+        92% {left: 256px; top:580px;}
+        94% {left: 254px; top:585px;}
+        96% {left: 252px; top:590px;}
+        98% {left: 250px; top:595px;}
+        100% {left: 248px; top: 600px;}     
+    }
+    
+     @keyframes confetti7 {
+        0% {left: 270px; top:0px;}
+        75% {left: 270px; top:600px;}
+        80% {left: 268px; top:550px;}
+        82% {left: 266px; top:555px;}
+        84% {left: 264px; top:560px;}
+        86% {left: 262px; top:565px;}
+        88% {left: 260px; top:570px;}
+        90% {left: 258px; top:575px;}
+        92% {left: 256px; top:580px;}
+        94% {left: 254px; top:585px;}
+        96% {left: 252px; top:590px;}
+        98% {left: 250px; top:595px;}
+        100% {left: 248px; top: 600px;}   
+    }
+    
+    #confetti8 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 550px;
+        -webkit-animation-name: confetti8;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti8;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.2s;
+    }    
+    
+    @-webkit-keyframes confetti8 {
+        0% {left: 550px; top:0px;}
+        75% {left: 550px; top:600px;}
+        80% {left: 570px; top:550px;}
+        82% {left: 572px; top:555px;}
+        84% {left: 574px; top:560px;}
+        86% {left: 576px; top:565px;}
+        88% {left: 578px; top:570px;}
+        90% {left: 580px; top:575px;}
+        92% {left: 582px; top:580px;}
+        94% {left: 584px; top:585px;}
+        96% {left: 586px; top:590px;}
+        98% {left: 588px; top:595px;}
+        100% {left: 590px; top: 600px;}     
+    }
+    
+     @keyframes confetti8 {
+        0% {left: 550px; top:0px;}
+        75% {left: 550px; top:600px;}
+        80% {left: 570px; top:550px;}
+        82% {left: 572px; top:555px;}
+        84% {left: 574px; top:560px;}
+        86% {left: 576px; top:565px;}
+        88% {left: 578px; top:570px;}
+        90% {left: 580px; top:575px;}
+        92% {left: 582px; top:580px;}
+        94% {left: 584px; top:585px;}
+        96% {left: 586px; top:590px;}
+        98% {left: 588px; top:595px;}
+        100% {left: 590px; top: 600px;}      
+    }
+    
+     #confetti9 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 30px;
+        -webkit-animation-name: confetti9;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti9;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.1s;
+    }    
+    
+    @-webkit-keyframes confetti9 {
+        0% {left: 30px; top:0px;}
+        75% {left: 30px; top:600px;}
+        80% {left: 50px; top:550px;}
+        82% {left: 52px; top:555px;}
+        84% {left: 54px; top:560px;}
+        86% {left: 56px; top:565px;}
+        88% {left: 58px; top:570px;}
+        90% {left: 60px; top:575px;}
+        92% {left: 62px; top:580px;}
+        94% {left: 64px; top:585px;}
+        96% {left: 66px; top:590px;}
+        98% {left: 68px; top:595px;}
+        100% {left: 70px; top: 600px;}      
+    }
+    
+     @keyframes confetti9 {
+        0% {left: 30px; top:0px;}
+        75% {left: 30px; top:600px;}
+        80% {left: 50px; top:550px;}
+        82% {left: 52px; top:555px;}
+        84% {left: 54px; top:560px;}
+        86% {left: 56px; top:565px;}
+        88% {left: 58px; top:570px;}
+        90% {left: 60px; top:575px;}
+        92% {left: 62px; top:580px;}
+        94% {left: 64px; top:585px;}
+        96% {left: 66px; top:590px;}
+        98% {left: 68px; top:595px;}
+        100% {left: 70px; top: 600px;}      
+    }
+    
+        #confetti10 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 800px;
+        -webkit-animation-name: confetti10;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti10;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }    
+    
+    @-webkit-keyframes confetti10 {
+        0% {left: 800px; top:0px;}
+        75% {left: 800px; top:600px;}
+        80% {left: 820px; top:550px;}
+        82% {left: 822px; top:555px;}
+        84% {left: 824px; top:560px;}
+        86% {left: 826px; top:565px;}
+        88% {left: 828px; top:570px;}
+        90% {left: 830px; top:575px;}
+        92% {left: 832px; top:580px;}
+        94% {left: 834px; top:585px;}
+        96% {left: 836px; top:590px;}
+        98% {left: 838px; top:595px;}
+        100% {left: 840px; top: 600px;}     
+    }
+    
+     @keyframes confetti10 {
+        0% {left: 800px; top:0px;}
+        75% {left: 800px; top:600px;}
+        80% {left: 820px; top:550px;}
+        82% {left: 822px; top:555px;}
+        84% {left: 824px; top:560px;}
+        86% {left: 826px; top:565px;}
+        88% {left: 828px; top:570px;}
+        90% {left: 830px; top:575px;}
+        92% {left: 832px; top:580px;}
+        94% {left: 834px; top:585px;}
+        96% {left: 836px; top:590px;}
+        98% {left: 838px; top:595px;}
+        100% {left: 840px; top: 600px;}      
+    }
+    
+     #confetti11 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 740px;
+        -webkit-animation-name: confetti11;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti11;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.13s;
+    }    
+    
+    @-webkit-keyframes confetti11 {
+        0% {left: 740px; top:0px;}
+        75% {left: 740px; top:600px;}
+        80% {left: 738px; top:550px;}
+        82% {left: 736px; top:555px;}
+        84% {left: 734px; top:560px;}
+        86% {left: 732px; top:565px;}
+        88% {left: 730px; top:570px;}
+        90% {left: 728px; top:575px;}
+        92% {left: 726px; top:580px;}
+        94% {left: 724px; top:585px;}
+        96% {left: 722px; top:590px;}
+        98% {left: 720px; top:595px;}
+        100% {left: 718px; top: 600px;}     
+    }
+    
+     @keyframes confetti11 {
+        0% {left: 740px; top:0px;}
+        75% {left: 740px; top:600px;}
+        80% {left: 738px; top:550px;}
+        82% {left: 736px; top:555px;}
+        84% {left: 734px; top:560px;}
+        86% {left: 732px; top:565px;}
+        88% {left: 730px; top:570px;}
+        90% {left: 728px; top:575px;}
+        92% {left: 726px; top:580px;}
+        94% {left: 724px; top:585px;}
+        96% {left: 722px; top:590px;}
+        98% {left: 720px; top:595px;}
+        100% {left: 718px; top: 600px;}    
+    }
+    
+    #confetti12 {
+    
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        left: 940px;
+        float: left;
+        -webkit-animation-name: confetti12;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti12;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.65s;
+    }    
+    
+    @-webkit-keyframes confetti12 {
+        0% {left: 940px; top:0px;}
+        75% {left: 940px; top:600px;}
+        80% {left: 938px; top:550px;}
+        82% {left: 936px; top:555px;}
+        84% {left: 934px; top:560px;}
+        86% {left: 932px; top:565px;}
+        88% {left: 930px; top:570px;}
+        90% {left: 928px; top:575px;}
+        92% {left: 926px; top:580px;}
+        94% {left: 924px; top:585px;}
+        96% {left: 922px; top:590px;}
+        98% {left: 920px; top:595px;}
+        100% {left: 918px; top: 600px;}     
+    }
+    
+     @keyframes confetti12 {
+        0% {left: 940px; top:0px;}
+        75% {left: 940px; top:600px;}
+        80% {left: 938px; top:550px;}
+        82% {left: 936px; top:555px;}
+        84% {left: 934px; top:560px;}
+        86% {left: 932px; top:565px;}
+        88% {left: 930px; top:570px;}
+        90% {left: 928px; top:575px;}
+        92% {left: 926px; top:580px;}
+        94% {left: 924px; top:585px;}
+        96% {left: 922px; top:590px;}
+        98% {left: 920px; top:595px;}
+        100% {left: 918px; top: 600px;}    
+    }
+    
+    #confetti13 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 150px;
+        -webkit-animation-name: confetti13;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti13;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.24s;
+    }    
+    
+    @-webkit-keyframes confetti13 {
+        0% {left: 150px; top:0px;}
+        75% {left: 150px; top:600px;}
+        80% {left: 170px; top:550px;}
+        82% {left: 172px; top:555px;}
+        84% {left: 174px; top:560px;}
+        86% {left: 176px; top:565px;}
+        88% {left: 178px; top:570px;}
+        90% {left: 170px; top:575px;}
+        92% {left: 182px; top:580px;}
+        94% {left: 184px; top:585px;}
+        96% {left: 186px; top:590px;}
+        98% {left: 188px; top:595px;}
+        100% {left: 190px; top: 600px;}     
+    }
+    
+     @keyframes confetti13 {
+        0% {left: 150px; top:0px;}
+        75% {left: 150px; top:600px;}
+        80% {left: 170px; top:550px;}
+        82% {left: 172px; top:555px;}
+        84% {left: 174px; top:560px;}
+        86% {left: 176px; top:565px;}
+        88% {left: 178px; top:570px;}
+        90% {left: 170px; top:575px;}
+        92% {left: 182px; top:580px;}
+        94% {left: 184px; top:585px;}
+        96% {left: 186px; top:590px;}
+        98% {left: 188px; top:595px;}
+        100% {left: 190px; top: 600px;}      
+    }
+    
+     #confetti14 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 750px;
+        -webkit-animation-name: confetti14;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti14;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.05s;
+    }    
+    
+    @-webkit-keyframes confetti14 {
+        0% {left: 750px; top:0px;}
+        75% {left: 750px; top:600px;}
+        80% {left: 770px; top:550px;}
+        82% {left: 772px; top:555px;}
+        84% {left: 774px; top:560px;}
+        86% {left: 776px; top:565px;}
+        88% {left: 778px; top:570px;}
+        90% {left: 780px; top:575px;}
+        92% {left: 782px; top:580px;}
+        94% {left: 784px; top:585px;}
+        96% {left: 786px; top:590px;}
+        98% {left: 788px; top:595px;}
+        100% {left: 790px; top: 600px;}      
+    }
+    
+     @keyframes confetti14 {
+        0% {left: 750px; top:0px;}
+        75% {left: 750px; top:600px;}
+        80% {left: 770px; top:550px;}
+        82% {left: 772px; top:555px;}
+        84% {left: 774px; top:560px;}
+        86% {left: 776px; top:565px;}
+        88% {left: 778px; top:570px;}
+        90% {left: 780px; top:575px;}
+        92% {left: 782px; top:580px;}
+        94% {left: 784px; top:585px;}
+        96% {left: 786px; top:590px;}
+        98% {left: 788px; top:595px;}
+        100% {left: 790px; top: 600px;}        
+    }
+    
+    #confetti15 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 650px;
+        -webkit-animation-name: confetti15;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti15;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }    
+    
+    @-webkit-keyframes confetti15 {
+        0% {left: 650px; top:0px;}
+        75% {left: 650px; top:600px;}
+        80% {left: 670px; top:550px;}
+        82% {left: 672px; top:555px;}
+        84% {left: 674px; top:560px;}
+        86% {left: 676px; top:565px;}
+        88% {left: 678px; top:570px;}
+        90% {left: 680px; top:575px;}
+        92% {left: 682px; top:580px;}
+        94% {left: 684px; top:585px;}
+        96% {left: 686px; top:590px;}
+        98% {left: 688px; top:595px;}
+        100% {left: 690px; top: 600px;}     
+    }
+    
+     @keyframes confetti15 {
+        0% {left: 650px; top:0px;}
+        75% {left: 650px; top:600px;}
+        80% {left: 670px; top:550px;}
+        82% {left: 672px; top:555px;}
+        84% {left: 674px; top:560px;}
+        86% {left: 676px; top:565px;}
+        88% {left: 678px; top:570px;}
+        90% {left: 680px; top:575px;}
+        92% {left: 682px; top:580px;}
+        94% {left: 684px; top:585px;}
+        96% {left: 686px; top:590px;}
+        98% {left: 688px; top:595px;}
+         100% {left: 690px; top: 600px;}
+    }    
+    
+     #confetti16 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 400px;
+        -webkit-animation-name: confetti16;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti16;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.13s;
+    }    
+    
+    @-webkit-keyframes confetti16 {
+        0% {left: 400px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}     
+    }
+    
+     @keyframes confetti16 {
+        0% {left: 400px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}    
+    }
+    
+    #confetti17 {
+    
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        left: 270px;
+        float: left;
+        -webkit-animation-name: confetti17;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti17;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.11s;
+    }    
+    
+    @-webkit-keyframes confetti17 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}     
+    }
+    
+     @keyframes confetti17 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}   
+    }
+    
+    #confetti18 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 630px;
+        -webkit-animation-name: confetti18;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti18;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.45s;
+    }    
+    
+    @-webkit-keyframes confetti18 {
+        0% {left: 630px; top:0px;}
+        75% {left: 630px; top:600px;}
+        80% {left: 650px; top:550px;}
+        82% {left: 652px; top:555px;}
+        84% {left: 654px; top:560px;}
+        86% {left: 656px; top:565px;}
+        88% {left: 658px; top:570px;}
+        90% {left: 660px; top:575px;}
+        92% {left: 662px; top:580px;}
+        94% {left: 664px; top:585px;}
+        96% {left: 666px; top:590px;}
+        98% {left: 668px; top:595px;}
+        100% {left: 670px; top: 600px;}     
+    }
+    
+     @keyframes confetti18 {
+        0% {left: 630px; top:0px;}
+        75% {left: 630px; top:600px;}
+        80% {left: 650px; top:550px;}
+        82% {left: 652px; top:555px;}
+        84% {left: 654px; top:560px;}
+        86% {left: 656px; top:565px;}
+        88% {left: 658px; top:570px;}
+        90% {left: 660px; top:575px;}
+        92% {left: 662px; top:580px;}
+        94% {left: 664px; top:585px;}
+        96% {left: 666px; top:590px;}
+        98% {left: 668px; top:595px;}
+        100% {left: 670px; top: 600px;}         
+    }
+    
+     #confetti19 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 110px;
+        -webkit-animation-name: confetti19;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti19;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.02s;
+    }    
+    
+    @-webkit-keyframes confetti19 {
+        0% {left: 110px; top:0px;}
+        75% {left: 110px; top:600px;}
+        80% {left: 130px; top:550px;}
+        82% {left: 132px; top:555px;}
+        84% {left: 134px; top:560px;}
+        86% {left: 136px; top:565px;}
+        88% {left: 138px; top:570px;}
+        90% {left: 140px; top:575px;}
+        92% {left: 142px; top:580px;}
+        94% {left: 144px; top:585px;}
+        96% {left: 146px; top:590px;}
+        98% {left: 148px; top:595px;}
+        100% {left: 150px; top: 600px;}      
+    }
+    
+     @keyframes confetti19 {
+        0% {left: 110px; top:0px;}
+        75% {left: 110px; top:600px;}
+        80% {left: 130px; top:550px;}
+        82% {left: 132px; top:555px;}
+        84% {left: 134px; top:560px;}
+        86% {left: 136px; top:565px;}
+        88% {left: 138px; top:570px;}
+        90% {left: 140px; top:575px;}
+        92% {left: 142px; top:580px;}
+        94% {left: 144px; top:585px;}
+        96% {left: 146px; top:590px;}
+        98% {left: 148px; top:595px;}
+        100% {left: 150px; top: 600px;}           
+    }
+         
+#confetti20 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 710px;
+        -webkit-animation-name: confetti20;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti20;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.03s;
+    }    
+    
+    @-webkit-keyframes confetti20 {
+        0% {left: 710px; top:0px;}
+        75% {left: 710px; top:600px;}
+        80% {left: 710px; top:550px;}
+        82% {left: 722px; top:555px;}
+        84% {left: 724px; top:560px;}
+        86% {left: 726px; top:565px;}
+        88% {left: 728px; top:570px;}
+        90% {left: 730px; top:575px;}
+        92% {left: 732px; top:580px;}
+        94% {left: 734px; top:585px;}
+        96% {left: 736px; top:590px;}
+        98% {left: 738px; top:595px;}
+        100% {left: 740px; top: 600px;}      
+    }
+    
+     @keyframes confetti20 {
+      0% {left: 710px; top:0px;}
+        75% {left: 710px; top:600px;}
+        80% {left: 710px; top:550px;}
+        82% {left: 722px; top:555px;}
+        84% {left: 724px; top:560px;}
+        86% {left: 726px; top:565px;}
+        88% {left: 728px; top:570px;}
+        90% {left: 730px; top:575px;}
+        92% {left: 732px; top:580px;}
+        94% {left: 734px; top:585px;}
+        96% {left: 736px; top:590px;}
+        98% {left: 738px; top:595px;}
+        100% {left: 740px; top: 600px;}       
+    }
+    
+    #confetti21 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 650px;
+        -webkit-animation-name: confetti21;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti21;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+    }    
+    
+    @-webkit-keyframes confetti21 {
+        0% {left: 650px; top:0px;}
+        75% {left: 650px; top:600px;}
+        80% {left: 670px; top:550px;}
+        82% {left: 672px; top:555px;}
+        84% {left: 674px; top:560px;}
+        86% {left: 676px; top:565px;}
+        88% {left: 678px; top:570px;}
+        90% {left: 680px; top:575px;}
+        92% {left: 682px; top:580px;}
+        94% {left: 684px; top:585px;}
+        96% {left: 686px; top:590px;}
+        98% {left: 688px; top:595px;}
+        100% {left: 690px; top: 600px;}     
+    }
+    
+     @keyframes confetti21 {
+        0% {left: 650px; top:0px;}
+        75% {left: 650px; top:600px;}
+        80% {left: 670px; top:550px;}
+        82% {left: 672px; top:555px;}
+        84% {left: 674px; top:560px;}
+        86% {left: 676px; top:565px;}
+        88% {left: 678px; top:570px;}
+        90% {left: 680px; top:575px;}
+        92% {left: 682px; top:580px;}
+        94% {left: 684px; top:585px;}
+        96% {left: 686px; top:590px;}
+        98% {left: 688px; top:595px;}
+         100% {left: 690px; top: 600px;}
+    }    
+    
+     #confetti22 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 400px;
+        -webkit-animation-name: confetti22;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti22;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.19s;
+    }    
+    
+    @-webkit-keyframes confetti22 {
+        0% {left: 400px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}     
+    }
+    
+     @keyframes confetti22 {
+        0% {left: 400px; top:0px;}
+        75% {left: 340px; top:600px;}
+        80% {left: 338px; top:550px;}
+        82% {left: 336px; top:555px;}
+        84% {left: 334px; top:560px;}
+        86% {left: 332px; top:565px;}
+        88% {left: 330px; top:570px;}
+        90% {left: 328px; top:575px;}
+        92% {left: 326px; top:580px;}
+        94% {left: 324px; top:585px;}
+        96% {left: 322px; top:590px;}
+        98% {left: 320px; top:595px;}
+        100% {left: 318px; top: 600px;}    
+    }
+    
+    #confetti23 {
+    
+        width: 30px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 50%;
+        position: relative;
+        left: 270px;
+        float: left;
+        -webkit-animation-name: confetti23;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti23;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.14s;
+    }    
+    
+    @-webkit-keyframes confetti23 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}     
+    }
+    
+     @keyframes confetti23 {
+        0% {left: 440px; top:0px;}
+        75% {left: 440px; top:600px;}
+        80% {left: 438px; top:550px;}
+        82% {left: 436px; top:555px;}
+        84% {left: 434px; top:560px;}
+        86% {left: 432px; top:565px;}
+        88% {left: 430px; top:570px;}
+        90% {left: 428px; top:575px;}
+        92% {left: 426px; top:580px;}
+        94% {left: 424px; top:585px;}
+        96% {left: 422px; top:590px;}
+        98% {left: 420px; top:595px;}
+        100% {left: 418px; top: 600px;}   
+    }
+    
+    #confetti24 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: yellow;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 630px;
+        -webkit-animation-name: confetti24;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti24;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.4s;
+    }    
+    
+    @-webkit-keyframes confetti24 {
+        0% {left: 630px; top:0px;}
+        75% {left: 630px; top:600px;}
+        80% {left: 650px; top:550px;}
+        82% {left: 652px; top:555px;}
+        84% {left: 654px; top:560px;}
+        86% {left: 656px; top:565px;}
+        88% {left: 658px; top:570px;}
+        90% {left: 660px; top:575px;}
+        92% {left: 662px; top:580px;}
+        94% {left: 664px; top:585px;}
+        96% {left: 666px; top:590px;}
+        98% {left: 668px; top:595px;}
+        100% {left: 670px; top: 600px;}     
+    }
+    
+     @keyframes confetti24 {
+        0% {left: 630px; top:0px;}
+        75% {left: 630px; top:600px;}
+        80% {left: 650px; top:550px;}
+        82% {left: 652px; top:555px;}
+        84% {left: 654px; top:560px;}
+        86% {left: 656px; top:565px;}
+        88% {left: 658px; top:570px;}
+        90% {left: 660px; top:575px;}
+        92% {left: 662px; top:580px;}
+        94% {left: 664px; top:585px;}
+        96% {left: 666px; top:590px;}
+        98% {left: 668px; top:595px;}
+        100% {left: 670px; top: 600px;}         
+    }
+    
+     #confetti25 {
+        
+        width: 30px;
+        height: 30px;
+        background-color: deeppink;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        left: 0px;
+        -webkit-animation-name: confetti25;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-name: confetti25;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-delay: 0.06s;
+    }    
+    
+    @-webkit-keyframes confetti25 {
+        0% {left: 0px; top:0px;}
+        75% {left: 0px; top:600px;}
+        80% {left: 20px; top:550px;}
+        82% {left: 22px; top:555px;}
+        84% {left: 24px; top:560px;}
+        86% {left: 26px; top:565px;}
+        88% {left: 28px; top:570px;}
+        90% {left: 30px; top:575px;}
+        92% {left: 32px; top:580px;}
+        94% {left: 34px; top:585px;}
+        96% {left: 36px; top:590px;}
+        98% {left: 38px; top:595px;}
+        100% {left: 40px; top: 600px;}       
+    }
+    
+     @keyframes confetti25 {
+        0% {left: 0px; top:0px;}
+        75% {left: 0px; top:600px;}
+        80% {left: 20px; top:550px;}
+        82% {left: 22px; top:555px;}
+        84% {left: 24px; top:560px;}
+        86% {left: 26px; top:565px;}
+        88% {left: 28px; top:570px;}
+        90% {left: 30px; top:575px;}
+        92% {left: 32px; top:580px;}
+        94% {left: 34px; top:585px;}
+        96% {left: 36px; top:590px;}
+        98% {left: 38px; top:595px;}
+        100% {left: 40px; top: 600px;}           
+    }
+    
+    #bigContainer {
+        width: 900px;
+        height: 900px;
+        
+    }
+    
+    #pHappyBirthday {
+        font-family: fantasy, helvetica;
+        color: goldenrod;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        -webkit-transition-property: font-size; 
+        -webkit-transition-duration: 2s; 
+        transition-property: font-size;
+        transition-duration: 2s;
+    }
+    
+/*    p#pHappyBirthday:hover {
+        font-size: 100px;
+    }*/
+    
+    #happyBirthday {
+        top: 200px;
+        left: 250px;
+            display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        position: relative;
+        -webkit-transition: -webkit-transform 2s; 
+        transition: transform 2s;
+    }
+
+/*    div#happyBirthday:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }*/
+    
+</style>
+
+<script>
+    
+function changeHappyBirthday(){
+//    if (document.getElementById("pHappyBirthday").style.fontSize < "200px") {
+        document.getElementById("pHappyBirthday").style.fontSize = "100px";
+//    }
+    
+    if (document.getElementById("happyBirthday").style.transform > "rotate(0deg)") {
+        document.getElementById("happyBirthday").style.transform = "rotate(0deg)";
+    }
+    else {
+        document.getElementById("happyBirthday").style.transform = "rotate(360deg)"
+    }
+}
+
+</script>
+</head>
+    
+<body onload="changeHappyBirthday()">
+    
+    <div id="bigContainer">
+        <div id="confetti";></div>
+        <div id="confetti1";></div>
+        <div id="confetti2";></div>
+        <div id="confetti3";></div>
+        <div id="confetti4";></div>
+        <div id="confetti5";></div>
+        <div id="confetti6";></div>
+        <div id="confetti7";></div>
+        <div id="confetti8";></div>
+        <div id="confetti9";></div>
+        <div id="confetti10";></div>
+        <div id="confetti11";></div>
+        <div id="confetti12";></div>
+        <div id="confetti13";></div>
+        <div id="confetti14";></div>
+        <div id="confetti15";></div>
+        <div id="confetti16";></div>
+        <div id="confetti17";></div>
+        <div id="confetti18";></div>
+        <div id="confetti19";></div>
+        <div id="confetti20";></div>
+        <div id="confetti21";></div>
+        <div id="confetti22";></div>
+        <div id="confetti23";></div>
+        <div id="confetti24";></div>
+        <div id="confetti25";></div>
+        <div id="happyBirthday"><p id="pHappyBirthday">Happy Birthday</p></div>
+    </div>
+    
+</body>
+</html>
