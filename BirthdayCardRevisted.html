@@ -1378,28 +1378,22 @@
     #happyBirthday {
         top: 200px;
         left: 250px;
-            display: block;
+        display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 90%;
         position: relative;
         -webkit-transition: -webkit-transform 2s; 
         transition: transform 2s;
     }
-
-/*    div#happyBirthday:hover {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }*/
     
 </style>
 
 <script>
     
 function changeHappyBirthday(){
-//    if (document.getElementById("pHappyBirthday").style.fontSize < "200px") {
-        document.getElementById("pHappyBirthday").style.fontSize = "100px";
-//    }
+
+    document.getElementById("pHappyBirthday").style.fontSize = "100px";
     
     if (document.getElementById("happyBirthday").style.transform > "rotate(0deg)") {
         document.getElementById("happyBirthday").style.transform = "rotate(0deg)";
