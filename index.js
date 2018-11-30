@@ -94,6 +94,8 @@ function addPerson(){
    document.getElementById("peopleList").innerHTML = listOfPeople;  
     
    document.getElementById("ChristmasListLink").className = "listLink";
+   document.getElementById("triangle-left").style.visibility = "visible";
+   document.getElementById("rectangle").style.visibility = "visible";
     
    buttonManagement();
 }
