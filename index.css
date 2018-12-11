@@ -164,6 +164,10 @@ select {
     background-color: white;
 }
 
+.errorMessage {
+    color: red;
+}
+
 #printButton {
     width: 120px;
     height: 40px;
