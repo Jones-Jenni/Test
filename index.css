@@ -1,5 +1,41 @@
+@-webkit-keyframes shakeText {
+   0% { transform: translate(1px, 1px); }
+  10% { transform: translate(-1px, -1px); }
+  20% { transform: translate(1px, -2px); }
+  30% { transform: translate(1px, 1px); }
+  40% { transform: translate(2px, -2px); }
+  50% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  70% { transform: translate(2px, -1px); }
+  80% { transform: translate(-1px, -1px); }
+  90% { transform: translate(1px, 1px); }
+  100% { transform: translate(2px, -1px); }
+    }
+    
+@keyframes shakeText {
+    0% { transform: translate(1px, 1px); }
+  10% { transform: translate(-1px, -1px); }
+  20% { transform: translate(1px, -2px); }
+  30% { transform: translate(1px, 1px); }
+  40% { transform: translate(2px, -2px); }
+  50% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  70% { transform: translate(2px, -1px); }
+  80% { transform: translate(-1px, -1px); }
+  90% { transform: translate(1px, 1px); }
+  100% { transform: translate(2px, -1px); }
+    }
 
-    @-webkit-keyframes arrow1 {
+.naughtyDivShake {
+    -webkit-animation-name: shakeText;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: shakeText;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrow1 {
         0% {border-right-color: #C39953;}
         25% {border-right-color: #B33B24;}
         50% {border-right-color: #D92121;}
@@ -50,7 +86,6 @@
         100% {color: #d14719;}
     }
 
-
 #triangle-left {
 	width: 0;
 	height: 0;
@@ -83,10 +118,12 @@
 }
 
 #listLink {
-   float: left; 
-   padding-right: 1500px;
    padding-bottom: 20px;
  
+}
+
+#video {
+    float: left;
 }
 
 #arrow {
@@ -119,11 +156,18 @@ select {
   margin-bottom: 5px;    
 }
 
-.buttonColor1{
+.buttonColor1 {
     background-color: green;
 }
 
-.buttonColor2{
+.buttonColor2 {
+    background-color: white;
+}
+
+#printButton {
+    width: 120px;
+    height: 40px;
+    font-size: 20;
     background-color: white;
 }
 
@@ -149,8 +193,8 @@ select {
     position: absolute;
     left: 100px;
     top: 500px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
     }
 
     div#toy1:hover {
@@ -166,9 +210,9 @@ select {
     position: absolute;
     left: 200px;
     top: 600px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
     }
 
@@ -182,9 +226,9 @@ select {
     position: absolute;
     left: 1000px;
     top: 500px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
 }
 
@@ -199,8 +243,8 @@ div#toy3:hover {
     position: absolute;
     left: 800px;
     top: 100px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy5{
@@ -209,8 +253,8 @@ div#toy3:hover {
     position: absolute;
     left: 500px;
     top: 300px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy6{
@@ -221,9 +265,9 @@ div#toy3:hover {
     position: absolute;
     left: 1200px;
     top: 200px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
 }
 
@@ -238,8 +282,8 @@ div#toy6:hover {
     position: absolute;
     left: 600px;
     top: 550px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy8{
@@ -248,8 +292,8 @@ div#toy6:hover {
     position: absolute;
     left: 1200px;
     top: 500px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy9{
@@ -258,8 +302,8 @@ div#toy6:hover {
     position: absolute;
     left: 300px;
     top: 550px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy10{
@@ -268,8 +312,8 @@ div#toy6:hover {
     position: absolute;
     left: 700px;
     top: 300px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy11{
@@ -278,8 +322,8 @@ div#toy6:hover {
     position: absolute;
     left: 900px;
     top: 600px;
-    -webkit-transition: -webkit-transform 2s; 
-    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s, -webkit-opacity 2s; 
+    transition: transform 2s, opacity 2s;
 }
 
 #toy12{
@@ -290,9 +334,9 @@ div#toy6:hover {
     position: absolute;
     left: 900px;
     top: 250px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
 }
 
@@ -309,9 +353,9 @@ div#toy12:hover {
     position: absolute;
     left: 400px;
     top: 450px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
 }
 
@@ -328,9 +372,9 @@ div#toy13:hover {
     position: absolute;
     left: 740px;
     top: 440px;
-    -webkit-transition-property: width height; 
+    -webkit-transition-property: width, height, opacity; 
     -webkit-transition-duration: 2s; 
-    transition-property: width height;
+    transition-property: width, height, opacity;
     transition-duration: 2s;
 }
 
@@ -338,3 +382,4 @@ div#toy14:hover {
    width: 50px;
    height: 50px;
 }
+

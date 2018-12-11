@@ -1,16 +1,14 @@
-//Make ball bigger and smaller on event and mimic hover
 function toyChange(toy){
-    if (document.getElementById(toy).style.width < "50px") {
-        document.getElementById(toy).style.width = "50px";
-       document.getElementById(toy).style.height = "50px";
-    }
-    else {
-        document.getElementById(toy).style.width = "30px";
-        document.getElementById(toy).style.height = "30px";
-    }
+        if (document.getElementById(toy).style.width < "50px") {
+           document.getElementById(toy).style.width = "50px";
+           document.getElementById(toy).style.height = "50px";
+        }
+        else {
+            document.getElementById(toy).style.width = "30px";
+            document.getElementById(toy).style.height = "30px";
+        }
 }
 
-//Used to spin snowflakes and mimic hover
 function toyRotate(toy){
     if (document.getElementById(toy).style.transform > "rotate(0deg)") {
         document.getElementById(toy).style.transform = "rotate(0deg)";
@@ -91,11 +89,9 @@ function addPerson(){
    
    var listOfPeople = stringThroughList(allThePeople);
    //displayed list of people on screen so user can see
-   document.getElementById("peopleList").innerHTML = listOfPeople;  
+   document.getElementById("peopleList").innerHTML = listOfPeople;
     
    document.getElementById("ChristmasListLink").className = "listLink";
-   document.getElementById("triangle-left").style.visibility = "visible";
-   document.getElementById("rectangle").style.visibility = "visible";
     
    buttonManagement();
 }
@@ -153,6 +149,22 @@ function getNaughty(){
     getTxt.send();
     
     removeButton();
+    document.getElementById("naughtyDiv").className = "naughtyDivShake";
+    
+    document.getElementById("toy1").style.opacity = "0";
+    document.getElementById("toy2").style.opacity = "0"; 
+    document.getElementById("toy3").style.opacity = "0";
+    document.getElementById("toy4").style.opacity = "0";
+    document.getElementById("toy5").style.opacity = "0";
+    document.getElementById("toy6").style.opacity = "0";
+    document.getElementById("toy7").style.opacity = "0";
+    document.getElementById("toy8").style.opacity = "0";
+    document.getElementById("toy9").style.opacity = "0";
+    document.getElementById("toy10").style.opacity = "0";
+    document.getElementById("toy11").style.opacity = "0";
+    document.getElementById("toy12").style.opacity = "0";
+    document.getElementById("toy13").style.opacity = "0";
+    document.getElementById("toy14").style.opacity = "0";
     
 }
 
