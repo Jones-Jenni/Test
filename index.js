@@ -25,7 +25,7 @@ function enterGifts() {
   allTheGifts[allTheGifts.length]=gift;
   document.getElementById("giftList").innerHTML = allTheGifts;
   enteredGifts();
-  addEntryValidation(true);
+  addEntryValidation("t");
 }
 
 //Manipulating CSS Class Properties Using Javascript
@@ -41,43 +41,44 @@ function enteredGifts(){
 }
 
 //Manipulating CSS Class Properties Using Javascript
-function addEntryValidation(mainValidation){
+function addEntryValidation(errMsg){
   var pattLetter = /[\w+]/;
   var pattDigit = /[\d+]/;
   var textName = document.getElementById("name").value;
   var textAge = document.getElementById("age").value;
   if (pattLetter.test(textName) && pattDigit.test(textAge) && (allTheGifts[0] != "" && allTheGifts[0] != null)){
-    document.getElementById("nameErrorMessage").innerHTML = "";
-    document.getElementById("ageErrorMessage").innerHTML = "";
-    document.getElementById("giftsErrorMessage").innerHTML = "";
     document.getElementById("addEntryButton").className = "buttonColor1";
     document.getElementById("addEntryButton").disabled = false;
+    document.getElementById("nameErrorMess").innerHTML = "";
+    document.getElementById("ageErrorMess").innerHTML = "";
   }
   else if (!pattLetter.test(textName) || !pattDigit.test(textAge) || (allTheGifts[0] == "" || allTheGifts[0] == null)){
     document.getElementById("addEntryButton").className = "buttonColor2";
     document.getElementById("addEntryButton").disabled = true;
   }
-
-   if (mainValidation){
-      if(!pattLetter.test(textName)){
-          document.getElementById("nameErrorMessage").innerHTML = "Please enter a correct name.";
-      }
-      if(!pattDigit.test(textAge)){
-          document.getElementById("ageErrorMessage").innerHTML = "Please enter a correct age.";
-      }
-   }
+    
+    if(errMsg=="t"){
+    if(!pattLetter.test(textName)){
+       document.getElementById("nameErrorMess").innerHTML = "Please enter a correct name.";
+    }
+    
+    if(!pattDigit.test(textAge)){
+       document.getElementById("ageErrorMess").innerHTML = "Please enter a correct age.";
+    }
+    }
+  
 }
 
 function addEntryValidationN(){
-    addEntryValidation(false);
-    var pattLetter = /[\w+]/;
+    addEntryValidation("f");
+   var pattLetter = /[\w+]/;
     if(!pattLetter.test(textName)){
        document.getElementById("nameErrorMessage").innerHTML = "Please enter a correct name.";
     }
 }
 
 function addEntryValidationA(){
-    addEntryValidation(false);
+    addEntryValidation("f");
     var pattDigit = /[\d+]/;
     if(!pattDigit.test(textAge)){
        document.getElementById("ageErrorMessage").innerHTML = "Please enter a correct age.";

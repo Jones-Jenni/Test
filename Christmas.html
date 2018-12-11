@@ -13,9 +13,9 @@
 <form>
     
  <div>
-    <p id="nameErrorMessage" class="errorMessage"></p>
+    <p id="nameErrorMess" class="errorMessage"></p>
     <label>Name</label>
-    <input id="name" oninput = "addEntryValidationN()" type="text" padding-bottom: 50px/>
+    <input id="name" oninput = "addEntryValidation()" type="text" padding-bottom: 50px/>
 </div>
 <div>
     <label>Gender</label>
@@ -25,12 +25,11 @@
     </select>
 </div>
 <div>
-    <p id="ageErrorMessage" class="errorMessage"></p>
+    <p id="ageErrorMess" class="errorMessage"></p>
     <label>Age</label>
-    <input id="age" oninput = "addEntryValidationA()" type="text" />
+    <input id="age" oninput = "addEntryValidation()" type="text" />
 </div>
 <div>
-    <p id="giftsErrorMessage" class="errorMessage"></p>
     <label>WishList</label>
     <input id="gifts" type="text" oninput = "needToEnterGifts()" />
 </div> 
@@ -43,11 +42,14 @@
     
 <p id="peopleList"></p>
     
+<!--<div id="arrow">-->
     <div id="listLink"><a href="ChristmasList.html"><p id="ChristmasListLink">Get ChristmasList</p></a></div>
+<!--    <div id="triangle-left"></div><div id="rectangle"></div>
+</div>-->
     
-<br><br><br><br>
+<br><br><br>
     
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/wGDqPVASLIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wGDqPVASLIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>   
     //User can hit enter in addition to the button. Still checks for proper entery (addEntryValidation).
